@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-A laboratory for learning secure web and mobile development in a practical manner.
+安全なウェブ/モバイルアプリ開発を実践的に学ぶための実験室。
 </p>
 
 <p align="center">
@@ -12,52 +12,52 @@ A laboratory for learning secure web and mobile development in a practical manne
 <a href="https://gitter.im/secDevLabs/community"><img src="https://badges.gitter.im/secDevLabs/community.svg"/></a>
 </p>
 
-## Build your lab
+## あなたのラボをビルドする
 
-By provisioning local environments via docker-compose, you will learn how the most critical web application security risks are exploited and how these vulnerable codes can be fixed to mitigate them. 👩‍💻
+docker-composeを用いてローカル環境をプロビジョニングして、Webアプリケーションの致命的セキュリティリスクがどのように悪用されるのか、そしてそれをどのように修正すればリスクを軽減できるのかを学びましょう。👩‍💻
 
-## How do I start?
+## どうやって始めるの？
 
-After forking this repository, you will find multiple intended vulnerable apps based on real-life scenarios in various languages such as Golang, Python and PHP. A good start would be installing the ones you are most familiar with. You can find instructions to do this on each of the apps. 💡
+このリポジトリをフォークすると、Golang、Python、PHPなど様々な言語で作成された、現実の事件に基づいた複数の意図的な脆弱性をもつアプリが見つかります。最初は最も馴染みあるものをインストールしてみましょう。各アプリのページに手順が記載されています。💡
 
-Each of them has an `Attack Narrative` section that describes how an attacker would exploit the corresponding vulnerability. Before reading any code, it may be a good idea following these steps so you can better understand the attack itself. 💉
+脆弱性にはそれぞれ攻撃者がどのように悪用してくるのかを解説する「攻撃の流れ」セクションが用意されています。コードを読む前に、攻撃そのものの理解を促すため読んでみることをおすすめします。💉
 
-Now it's time to shield the application up! Imagine that this is your application and you need to fix these flaws! Your mission is writing new codes that mitigate them and sending a new Pull Request to deploy a secure app! 🔐
+さあ、ついにアプリケーションを保護するターンです。これがあなたの管理するアプリケーションで、それの持つ欠陥を修正する必要があると思ってください！あなたのミッションは、その欠点を抑えるコードを書き、安全なアプリをデプロイするためPull Requestを送信することです！ 🔐
 
-## How secure is my new code?
+## 私のコードの安全性はどう？
 
-After mitigating a vulnerability, you can send a Pull Request to gently ask the secDevLabs community to review your new secure codes. If you're feeling a bit lost, try having a look at [this mitigation solution](https://github.com/globocom/secDevLabs/pull/29), it might help! 🚀
+脆弱性を軽減した後は、Pull Requestを送信してsecDevLabsのコミュニティに温和にレビューを依頼することができます。もし迷いがある場合は、 [軽減例](https://github.com/globocom/secDevLabs/pull/29)を見てみてください。何かの助けになるかもしれません。 🚀
 
-## OWASP Top 10 (2021) apps: 💻
+## OWASP Top 10 (2021) アプリ: 💻
 
-Disclaimer: You are about to install vulnerable apps in your machine! 🔥
+免責事項：あなたのマシンに大きな脆弱性を持つアプリをインストールしようとしています！ 🔥
 
-| Vulnerability                                 | Language       | Application                                                                     |
+| 脆弱性                                 | 言語       | アプリケーション                                                                     |
 | --------------------------------------------- | -------------- | ------------------------------------------------------------------------------- |
-| A1 - Broken Access Control                    | Golang         | [Vulnerable Ecommerce API](owasp-top10-2021-apps/a1/ecommerce-api)              |
-| A1 - Broken Access Control                    | NodeJS         | [Tic-Tac-Toe](owasp-top10-2021-apps/a1/tictactoe)                               |
-| A1 - Broken Access Control                    | Golang         | [Camplake-API](owasp-top10-2021-apps/a1/camplake-api)                           |
-| A2 - Cryptographic Failures                   | Golang         | [SnakePro](owasp-top10-2021-apps/a2/snake-pro)                                  |
-| A3 - Injection                                | Golang         | [CopyNPaste API](owasp-top10-2021-apps/a3/copy-n-paste)                         |
-| A3 - Injection                                | NodeJS         | [Mongection](owasp-top10-2021-apps/a3/mongection)                               |
-| A3 - Injection                                | Python         | [SSType](owasp-top10-2021-apps/a3/sstype)                                       |
-| A3 - Injection (XSS)                          | Python         | [Gossip World](owasp-top10-2021-apps/a3/gossip-world)                           |
-| A3 - Injection (XSS)                          | React          | [Comment Killer](owasp-top10-2021-apps/a3/comment-killer)                       |
-| A3 - Injection (XSS)                          | Angular/Spring | [Streaming](owasp-top10-2021-apps/a3/streaming)                                 |
-| A4 - Insecure Design                          | React/Go       | [Super Recovery Password App](owasp-top10-2021-apps/a4/super-recovery-password) |
-| A5 - Security Misconfiguration (XXE)          | PHP            | [ViniJr Blog](owasp-top10-2021-apps/a5/vinijr-blog)                             |
-| A5 - Security Misconfiguration                | PHP            | [Vulnerable Wordpress Misconfig](owasp-top10-2021-apps/a5/misconfig-wordpress)  |
-| A5 - Security Misconfiguration                | NodeJS         | [Stegonography](owasp-top10-2021-apps/a5/stegonography)                         |
-| A6 - Vulnerable and Outdated Components       | PHP            | [Cimentech](owasp-top10-2021-apps/a6/cimentech)                                 |
-| A6 - Vulnerable and Outdated Components       | Python         | [Golden Hat Society](owasp-top10-2021-apps/a6/golden-hat)                       |
-| A7 - Identity and Authentication Failures     | Python         | [Saidajaula Monster Fit](owasp-top10-2021-apps/a7/saidajaula-monster)           |
-| A7 - Identity and Authentication Failures     | Golang         | [Insecure go project](owasp-top10-2021-apps/a7/insecure-go-project)             |
+| A1 - アクセスコントロールの不備                    | Golang         | [Vulnerable Ecommerce API](owasp-top10-2021-apps/a1/ecommerce-api)              |
+| A1 - アクセスコントロールの不備                    | NodeJS         | [Tic-Tac-Toe](owasp-top10-2021-apps/a1/tictactoe)                               |
+| A1 - アクセスコントロールの不備                    | Golang         | [Camplake-API](owasp-top10-2021-apps/a1/camplake-api)                           |
+| A2 - 暗号化の失敗                   | Golang         | [SnakePro](owasp-top10-2021-apps/a2/snake-pro)                                  |
+| A3 - インジェクション攻撃                                | Golang         | [CopyNPaste API](owasp-top10-2021-apps/a3/copy-n-paste)                         |
+| A3 - インジェクション攻撃                                | NodeJS         | [Mongection](owasp-top10-2021-apps/a3/mongection)                               |
+| A3 - インジェクション攻撃                                | Python         | [SSType](owasp-top10-2021-apps/a3/sstype)                                       |
+| A3 - インジェクション攻撃（XSS）                          | Python         | [Gossip World](owasp-top10-2021-apps/a3/gossip-world)                           |
+| A3 - インジェクション攻撃（XSS）                          | React          | [Comment Killer](owasp-top10-2021-apps/a3/comment-killer)                       |
+| A3 - インジェクション攻撃（XSS）                          | Angular/Spring | [Streaming](owasp-top10-2021-apps/a3/streaming)                                 |
+| A4 - 不安な設計                          | React/Go       | [Super Recovery Password App](owasp-top10-2021-apps/a4/super-recovery-password) |
+| A5 - セキュリティの設定ミス（XXE）          | PHP            | [ViniJr Blog](owasp-top10-2021-apps/a5/vinijr-blog)                             |
+| A5 - セキュリティの設定ミス                | PHP            | [Vulnerable Wordpress Misconfig](owasp-top10-2021-apps/a5/misconfig-wordpress)  |
+| A5 - セキュリティの設定ミス                | NodeJS         | [Stegonography](owasp-top10-2021-apps/a5/stegonography)                         |
+| A6 - 脆弱かつ旧式なコンポーネント      | PHP            | [Cimentech](owasp-top10-2021-apps/a6/cimentech)                                 |
+| A6 - 脆弱かつ旧式なコンポーネン       | Python         | [Golden Hat Society](owasp-top10-2021-apps/a6/golden-hat)                       |
+| A7 - アイデンティティと認証の失敗     | Python         | [Saidajaula Monster Fit](owasp-top10-2021-apps/a7/saidajaula-monster)           |
+| A7 - アイデンティティと認証の失敗     | Golang         | [Insecure go project](owasp-top10-2021-apps/a7/insecure-go-project)             |
 | A8 - Software and Data Integrity Failures     | Python         | [Amarelo Designs](owasp-top10-2021-apps/a8/amarelo-designs)                     |
 | A9 - Security Logging and Monitoring Failures | Python         | [GamesIrados.com](owasp-top10-2021-apps/a9/games-irados)                        |
 
 ## OWASP Top 10 (2016) Mobile apps: 📲
 
-Disclaimer: You are about to install vulnerable mobile apps in your machine! 🔥
+免責事項：あなたのマシンに大きな脆弱性を持つモバイルアプリをインストールしようとしています！ 🔥
 
 | Vulnerability                  | Language     | Application                                         |
 | ------------------------------ | ------------ | --------------------------------------------------- |
